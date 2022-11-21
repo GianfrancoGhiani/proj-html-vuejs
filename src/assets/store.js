@@ -12,5 +12,5 @@ export const store = reactive({
     forumIcons:[
         '<i class="fa-solid fa-file-lines"></i>', '<i class="fa-brands fa-apple"></i>', '<i class="fa-brands fa-windows"></i>', '<i class="fa-brands fa-android"></i>', '<i class="fa-solid fa-mug-saucer"></i>', '<i class="fa-solid fa-cubes"></i>', '<i class="fa-solid fa-laptop"></i>', '<i class="fa-solid fa-wrench"></i>'
     ],
-    
+
 })

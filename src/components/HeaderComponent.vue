@@ -8,8 +8,7 @@
                     <div></div>
                 </li>
                 <li>
-                    <BtnComponent class="caps" :style="{ backgroundColor: `${store.colorPalette.dark}` }"
-                        content="join us" :chev=false />
+                    <BtnComponent class="caps" content="join us" :chev=false />
                 </li>
             </ul>
         </div>
@@ -36,7 +35,7 @@ export default {
 
 .top-bar {
     height: 4rem;
-    background-color: $lightblue;
+    background-color: $blue;
     padding: 0.5rem;
     position: fixed;
     top: 0;
@@ -61,6 +60,8 @@ export default {
             @include flexrow;
 
             li {
+                font-size: 90%;
+
                 position: relative;
 
                 padding: 0 0.7rem;
@@ -81,7 +82,9 @@ export default {
                     line-height: 4rem;
                 }
 
-                button {}
+                button {
+                    background-color: $dark;
+                }
             }
 
         }

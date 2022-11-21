@@ -1,13 +1,13 @@
 <template>
-    <div>
-
-    </div>
+    <JumboComponent />
 </template>
 
 <script>
-export default {
-    name: 'MainComponent',
+import JumboComponent from './sub/JumboComponent.vue';
 
+export default {
+    name: "MainComponent",
+    components: { JumboComponent }
 }
 </script>
 

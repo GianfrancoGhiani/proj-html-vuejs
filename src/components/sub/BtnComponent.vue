@@ -28,6 +28,6 @@ export default {
 button {
     cursor: pointer;
     color: $white;
-    padding: 0.5rem 0.7rem;
+    padding: .7em 1.5em;
 }
 </style>
