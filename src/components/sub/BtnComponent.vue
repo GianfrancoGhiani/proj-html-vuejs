@@ -1,5 +1,5 @@
 <template>
-    <button :class="class">{{ content }} <i v-show="chev" class="fa-solid fa-chevron-right"></i></button>
+    <button :class="class">{{ content }} <i v-show="chev == 'true'" class="fa-solid fa-chevron-right"></i></button>
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
     props: {
         class: String,
         content: String,
-        chev: Boolean
+        chev: String
     },
     data() {
         return {

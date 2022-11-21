@@ -3,7 +3,7 @@
         <div class="container">
             <h1>Tech Forum!</h1>
             <div>Discuss all the latest technology news and trends</div>
-            <BtnComponent class="caps" content="get avada now!" chev=true />
+            <BtnComponent class="caps" content="get avada now!" chev='true' />
         </div>
     </div>
 </template>
@@ -26,7 +26,7 @@ export default {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    background-attachment: local;
+    background-attachment: fixed;
     padding-top: 4rem;
     @include flexcol;
 

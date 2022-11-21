@@ -8,7 +8,7 @@
                     <div></div>
                 </li>
                 <li>
-                    <BtnComponent class="caps" content="join us" :chev=false />
+                    <BtnComponent class="caps" content="join us" chev="false" />
                 </li>
             </ul>
         </div>
@@ -61,8 +61,10 @@ export default {
 
             li {
                 font-size: 90%;
+                cursor: pointer;
 
                 position: relative;
+                line-height: 4rem;
 
                 padding: 0 0.7rem;
                 text-transform: capitalize;
