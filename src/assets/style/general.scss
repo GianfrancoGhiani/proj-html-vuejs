@@ -8,6 +8,32 @@ $fa-font-path: '../webfonts';
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Fira Sans', sans-serif;
+    background-color: $grey;
+    color: $white;
+}
+.container{
+    width :60%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+.caps{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: $white;
+
 }
