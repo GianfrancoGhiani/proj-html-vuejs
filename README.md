@@ -43,6 +43,5 @@ npm run build
     - oggetto con dati profotti/news con url, name, date, comments-counter, description
     - array di social icons
 - #### Milestone 2
-
-  riprodurre l'estetica (statica) dei 3 componenti base header + main + footer
+  riprodurre l'estetica (statica) dei 3 componenti base header + main + footer \
   stando attenti a il linking tra i comp, utilizzare store.js per i dati dinamici

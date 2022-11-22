@@ -35,5 +35,6 @@ export const store = reactive({
             description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus ab ad quae veniam exercitationem ipsam suscipit, minima nihil eos aliquid ipsa ut.'
         }
 
-    }
+    },
+
 })

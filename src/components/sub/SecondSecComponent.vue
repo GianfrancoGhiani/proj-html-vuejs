@@ -52,6 +52,7 @@ export default {
 
     .card-list {
         @include flexrow;
+        padding-top: 3rem;
     }
 }
 </style>
