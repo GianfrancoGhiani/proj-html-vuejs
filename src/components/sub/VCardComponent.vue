@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <img :src="elem.url" :alt="elem.name">
+        <div class="card-img"><img :src="elem.url" :alt="elem.name"></div>
         <div class="text">
             <h4 class="name">{{ elem.name }}</h4>
             <div class="details">
@@ -14,7 +14,8 @@
 <script>
 import { store } from '../../assets/store';
 export default {
-    name: 'SCardComponent',
+    //vertical card component
+    name: 'VCardComponent',
     props: {
         elem: Object
     },
@@ -32,6 +33,8 @@ export default {
 @use '../../assets/style/partials/mixin' as*;
 
 .wrapper {
+    cursor: pointer;
+
     width: calc(100% / 3);
     padding: 1rem;
     text-align: left;
@@ -42,8 +45,18 @@ export default {
         font-weight: 800;
     }
 
-    img {
-        max-width: 100%;
+    .card-img {
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            transform: scale(1.25);
+            transition: transform .4s ease-in-out .15s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
     }
 
     .details {

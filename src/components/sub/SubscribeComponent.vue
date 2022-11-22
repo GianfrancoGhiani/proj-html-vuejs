@@ -3,7 +3,8 @@
         <div class="container">
             <h2>Subscribe to out Newsletter</h2>
             <div class="input">
-                <input type="email" name="mail" id="mail" placeholder="Insert your email*" v-model="email">
+                <input type="email" name="mail" :class="store.error ? 'err-bord' : ''" id="mail"
+                    placeholder="Insert your email*" v-model="email">
                 <BtnComponent class="caps" content="send" chev="false" @click="getEmail()" />
                 <div class="error" v-show="store.error">Insert a valid email address (wich contains at least a @)
                 </div>
@@ -59,6 +60,10 @@ export default {
             width: 60%;
             margin: 2rem;
             padding: 1rem;
+
+            &.err-bord {
+                border: 2px solid $youtube;
+            }
 
         }
 

@@ -7,7 +7,7 @@
                 <LineBreakComponent />
             </div>
             <div class="card-list">
-                <SCardComponent v-for="(news, index) in store.products.news1" :key="index" :elem=news />
+                <VCardComponent v-for="(news, index) in store.products.news1" :key="index" :elem=news />
             </div>
         </div>
         <div class="sec-part">
@@ -17,7 +17,7 @@
             </div>
             <div class="container">
                 <div class="card-list">
-                    <SCardComponent v-for="(news, index) in store.products.news2" :key="index" :elem="news" />
+                    <VCardComponent v-for="(news, index) in store.products.news2" :key="index" :elem="news" />
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
 
 <script>
 import LineBreakComponent from './LineBreakComponent.vue';
-import SCardComponent from './SCardComponent.vue';
+import VCardComponent from './VCardComponent.vue';
 import EmphasizedComponent from './EmphasizedComponent.vue';
 
 import { store } from '../../assets/store';
@@ -34,7 +34,7 @@ import { store } from '../../assets/store';
 
 export default {
     name: "SecondSecComponent",
-    components: { LineBreakComponent, SCardComponent, EmphasizedComponent },
+    components: { LineBreakComponent, VCardComponent, EmphasizedComponent },
     data() {
         return {
             store,

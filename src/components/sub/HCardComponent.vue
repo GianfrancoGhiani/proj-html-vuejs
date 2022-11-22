@@ -12,12 +12,11 @@
 
 <script>
 export default {
+    //horizontal card component
     name: 'HCardComponent',
     props: {
         elem: Object
     },
-
-
 }
 </script>
 
@@ -26,6 +25,14 @@ export default {
 @use '../../assets/style/partials/mixin' as*;
 
 .lit-wrapper {
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+        background-color: $notwhite;
+    }
+
+    cursor: pointer;
+
     @include flexrow;
     align-items: center;
 

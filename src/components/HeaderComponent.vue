@@ -3,7 +3,7 @@
         <div class="container">
             <div class="logo"><img src="/img/logo.png" alt="logo"></div>
             <ul class="menu">
-                <li v-for="(elem, index) in store.topMenu" :key="index" :class="index === 0 ? 'active' : ''"><a
+                <li v-for="(elem, index) in store.topMenu" :key="index" :class="index === 0 ? 'active' : 'item'"><a
                         href="#">{{ elem }}</a>
                     <div></div>
                 </li>
@@ -69,15 +69,20 @@ export default {
 
                 padding: 0 0.7rem;
                 text-transform: capitalize;
+                transition: transform 200ms linear;
+
+                &.item:hover {
+                    transform: scale(1.05);
+                }
 
                 &.active {
                     div {
                         position: absolute;
                         top: 4rem;
                         left: 0;
-                        width: 80px;
-                        height: 28px;
-                        // background: radial-gradient(40.25% 100% at 50% 0%, #74DEF4 0%, #74DEF4 99.99%, transparent 100%);
+                        width: 70px;
+                        height: 10px;
+                        background: conic-gradient(from 0deg at 50% 100%, #27AABE 0deg, #27AABE 50deg, rgba(41, 171, 190, 0) 50deg, rgba(217, 217, 217, 0) 310deg, #27AABE 310deg, #27AABE 360deg);
                     }
                 }
 
@@ -85,12 +90,16 @@ export default {
                     line-height: 4rem;
                 }
 
-                button {
-                    background-color: $dark;
-                }
+
             }
 
         }
+
+
+    }
+
+    .caps {
+        background-color: $dark;
     }
 }
 </style>

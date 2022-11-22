@@ -1,5 +1,6 @@
 <template>
-    <button :class="class">{{ content }} <i v-show="chev == 'true'" class="fa-solid fa-chevron-right"></i></button>
+    <button :class="class" class="btn-bg">{{ content }} <i v-show="chev == 'true'"
+            class="fa-solid fa-chevron-right"></i></button>
 </template>
 
 <script>
@@ -30,5 +31,6 @@ button {
     color: $white;
     padding: .7em 1.5em;
     border: 0;
+
 }
 </style>

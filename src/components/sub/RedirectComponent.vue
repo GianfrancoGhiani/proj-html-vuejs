@@ -17,8 +17,14 @@ export default {
 @use '../../assets/style/partials/mixin' as*;
 
 #redirect {
+    cursor: pointer;
     background-color: $dark;
     padding: 2.5rem;
     text-align: center;
+    transition: background-color .5s ease-out;
+
+    &:hover {
+        background-color: darken($color: $lightblue, $amount: 20);
+    }
 }
 </style>
