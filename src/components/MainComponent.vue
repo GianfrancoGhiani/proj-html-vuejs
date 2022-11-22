@@ -11,6 +11,9 @@
     <section>
         <TutorialComponent />
     </section>
+    <section>
+        <RedirectComponent redirect="read our blog" />
+    </section>
 </template>
 
 <script>
@@ -23,9 +26,10 @@ import EmphasizedComponent from './sub/EmphasizedComponent.vue';
 import { store } from '../assets/store.js'
 import SCardComponent from './sub/SCardComponent.vue';
 import TutorialComponent from './sub/TutorialComponent.vue';
+import RedirectComponent from './sub/RedirectComponent.vue';
 export default {
     name: "MainComponent",
-    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent, TutorialComponent },
+    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent, TutorialComponent, RedirectComponent },
     data() {
         return {
             store,
