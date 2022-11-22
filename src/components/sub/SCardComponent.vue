@@ -35,6 +35,12 @@ export default {
     width: calc(100% / 3);
     padding: 1rem;
     text-align: left;
+    font-size: .8rem;
+    color: $dark;
+
+    .name {
+        font-weight: 800;
+    }
 
     img {
         max-width: 100%;
@@ -43,7 +49,7 @@ export default {
     .details {
         font-size: 90%;
         color: $grey;
-        font-weight: 500;
+        font-weight: 600;
 
         .date {
             margin-bottom: .7rem;

@@ -32,6 +32,7 @@ export default {
 @use '../../assets/style/partials/mixin.scss' as*;
 
 .container {
+    color: $white;
     min-height: 500px;
     height: 50vh;
     background-image: url('/img/featured_article_1_bg.jpg');
@@ -50,7 +51,7 @@ export default {
 
         h2 {
             font-size: 3rem;
-            padding: 2rem 0;
+            padding-top: 2rem;
 
             text-transform: capitalize;
         }
