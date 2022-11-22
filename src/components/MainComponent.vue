@@ -8,7 +8,9 @@
     <section>
         <SecondSecComponent />
     </section>
-
+    <section>
+        <TutorialComponent />
+    </section>
 </template>
 
 <script>
@@ -20,12 +22,14 @@ import JumboComponent from './sub/JumboComponent.vue';
 import EmphasizedComponent from './sub/EmphasizedComponent.vue';
 import { store } from '../assets/store.js'
 import SCardComponent from './sub/SCardComponent.vue';
+import TutorialComponent from './sub/TutorialComponent.vue';
 export default {
     name: "MainComponent",
-    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent },
+    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent, TutorialComponent },
     data() {
         return {
             store,
+
 
         }
     },

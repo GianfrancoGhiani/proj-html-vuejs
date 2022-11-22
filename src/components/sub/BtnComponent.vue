@@ -29,5 +29,6 @@ button {
     cursor: pointer;
     color: $white;
     padding: .7em 1.5em;
+    border: 0;
 }
 </style>

@@ -11,7 +11,10 @@
             </div>
         </div>
         <div class="sec-part">
-            <EmphasizedComponent toph="featured article" h="cras malesuada et orci eget pharetra" :pIn="p" />
+            <div class="container">
+                <EmphasizedComponent toph="featured article" h="cras malesuada et orci eget pharetra" :pIn="p"
+                    url="/img/featured_article_1_bg.jpg" />
+            </div>
             <div class="container">
                 <div class="card-list">
                     <SCardComponent v-for="(news, index) in store.products.news2" :key="index" :elem="news" />
@@ -46,14 +49,19 @@ export default {
 @use '../../assets/style/partials/variables' as*;
 @use '../../assets/style/partials/mixin' as*;
 
+#news {
+    margin: 4rem 0;
+}
+
 .container {
 
-    padding: 4rem 0;
+    padding: 2rem 0;
 
 
     .head {
         @include flexcol;
         align-items: center;
+        color: $dark;
 
         h2 {
             padding: 1.5rem;

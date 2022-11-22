@@ -15,7 +15,7 @@ export default {
 
 div {
     height: 1px;
-    width: 7%;
+    width: 80px;
     border: 1px solid $salmon;
 }
 </style>

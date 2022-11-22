@@ -60,5 +60,28 @@ export const store = reactive({
         }
 
     },
+    tutorial:{
+        smartWatch: {
+            url: '/img/post_feat_img_23-700x441.jpg',
+            name:'Donec ornare pretium eget scelisque justo',
+            date: 'October 11th, 2015',
+            comments_counter: 'Off',
+            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus ab ad quae veniam exercitationem ipsam suscipit, minima nihil eos aliquid ipsa ut.'
+        },
+        tablet:{
+            url: '/img/post_feat_img_22-700x441.jpg',
+            name:'Fusce sollicitudin nunc sed placerat varius',
+            date: 'October 11th, 2015',
+            comments_counter: 'Off',
+            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus ab ad quae veniam exercitationem ipsam suscipit, minima nihil eos aliquid ipsa ut.'
+        },
+        thinMonitor:{
+            url: '/img/post_feat_img_20-700x441.jpg',
+            name:'Proin eu purus sed aru aliquet curabir vens',
+            date: 'October 11th, 2015',
+            comments_counter: 'Off',
+            description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus ab ad quae veniam exercitationem ipsam suscipit, minima nihil eos aliquid ipsa ut.'
+        }
+    }
 
 })
