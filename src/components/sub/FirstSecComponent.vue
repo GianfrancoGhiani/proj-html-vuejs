@@ -1,5 +1,5 @@
 <template>
-    <section id="paragraph">
+    <section class="grey" id="paragraph">
         <div class="container">
             <div class="sec-title caps">avada forum is the place to be</div>
             <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nulla molestie tortor nec lectus venenatis,
@@ -22,7 +22,6 @@ export default {
 @use '../../assets/style/partials/mixin' as*;
 
 section {
-    background-color: $notwhite;
 
 
     .container {

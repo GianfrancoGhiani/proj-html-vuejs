@@ -23,6 +23,9 @@
     <section>
         <JoinComponent />
     </section>
+    <section>
+        <SubscribeComponent />
+    </section>
 </template>
 
 <script>
@@ -38,9 +41,10 @@ import TutorialComponent from './sub/TutorialComponent.vue';
 import RedirectComponent from './sub/RedirectComponent.vue';
 import ForumComponent from './sub/ForumComponent.vue';
 import JoinComponent from './sub/JoinComponent.vue';
+import SubscribeComponent from './sub/SubscribeComponent.vue';
 export default {
     name: "MainComponent",
-    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent, TutorialComponent, RedirectComponent, ForumComponent, JoinComponent },
+    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent, TutorialComponent, RedirectComponent, ForumComponent, JoinComponent, SubscribeComponent },
     data() {
         return {
             store,

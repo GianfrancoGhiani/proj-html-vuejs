@@ -1,5 +1,5 @@
 <template>
-    <div class="bg">
+    <div class="grey">
         <div class="container">
             <div class="head">
                 <div class="sec-title caps">phasellus eget metus</div>

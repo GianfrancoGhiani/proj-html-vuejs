@@ -1,13 +1,13 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    userEmail:'',
+    error:false,
     topMenu:['home', 'apple', 'microsoft', 'android', 'forums', 'contanct us'],
     footLinks:[
-
-        ['avada tech forum', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cupiditate nihil magnam, ratione deleniti deserunt quidem minima libero labore ea culpa repudiandae aliquid commodi accusamus inventore vel veritatis consequuntur officiis'],
-    ['popular topics', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat'],
-    ['recent topics', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat','Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat','Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat','Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat'],
-    ['latest replies','Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat']
+    ['popular topics', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.'],
+    ['recent topics', 'Lorem ipsum dolor sit, amet consectetur adipisicing.','Lorem ipsum dolor sit, amet consectetur adipisicing.','Lorem ipsum dolor sit, amet consectetur adipisicing.','Lorem ipsum dolor sit, amet consectetur adipisicing.'],
+    ['latest replies','Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.']
     ],
     forumIcons:[
         {icon: '<i class="fa-solid fa-file-lines"></i>',
@@ -97,6 +97,25 @@ export const store = reactive({
             comments_counter: 'Off',
             description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus ab ad quae veniam exercitationem ipsam suscipit, minima nihil eos aliquid ipsa ut.'
         }
-    }
+    },
+    social:[
+       {
+         icon:'<i class="fa-brands fa-facebook-f"></i>',
+         class: 'vio',
+        },
+       {
+         icon:'<i class="fa-brands fa-twitter"></i>',
+         class: 'lightb',
+        },
+        {
+            icon:'<i class="fa-brands fa-instagram"></i>',
+            class: 'blue',
+        },
+        {
+            icon:'<i class="fa-brands fa-youtube"></i>',
+            class: 'yt',
+        },
+    ]
+
 
 })
