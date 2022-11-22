@@ -14,6 +14,9 @@
     <section>
         <RedirectComponent redirect="read our blog" />
     </section>
+    <section>
+        <ForumComponent />
+    </section>
 </template>
 
 <script>
@@ -27,9 +30,10 @@ import { store } from '../assets/store.js'
 import SCardComponent from './sub/SCardComponent.vue';
 import TutorialComponent from './sub/TutorialComponent.vue';
 import RedirectComponent from './sub/RedirectComponent.vue';
+import ForumComponent from './sub/ForumComponent.vue';
 export default {
     name: "MainComponent",
-    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent, TutorialComponent, RedirectComponent },
+    components: { JumboComponent, FirstSecComponent, SecondSecComponent, EmphasizedComponent, SCardComponent, TutorialComponent, RedirectComponent, ForumComponent },
     data() {
         return {
             store,

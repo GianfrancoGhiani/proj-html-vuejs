@@ -10,7 +10,22 @@ export const store = reactive({
     ['latest replies','Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, repellat']
     ],
     forumIcons:[
-        '<i class="fa-solid fa-file-lines"></i>', '<i class="fa-brands fa-apple"></i>', '<i class="fa-brands fa-windows"></i>', '<i class="fa-brands fa-android"></i>', '<i class="fa-solid fa-mug-saucer"></i>', '<i class="fa-solid fa-cubes"></i>', '<i class="fa-solid fa-laptop"></i>', '<i class="fa-solid fa-wrench"></i>'
+        {icon: '<i class="fa-solid fa-file-lines"></i>',
+        title:'news &amp; comunity',},
+        {icon: '<i class="fa-brands fa-apple"></i>',
+        title:'apple forum',},
+        {icon: '<i class="fa-brands fa-windows"></i>',
+        title:'microsoft forum',},
+        {icon: '<i class="fa-brands fa-android"></i>',
+        title:'android forum',},
+        {icon: '<i class="fa-solid fa-mug-saucer"></i>',
+        title:'general discussion',},
+        {icon: '<i class="fa-solid fa-cubes"></i>',
+        title:'apps &amp; software',},
+        {icon: '<i class="fa-solid fa-laptop"></i>',
+        title:'gadgets &amp; stuff',},
+        {icon: '<i class="fa-solid fa-wrench"></i>',
+        title:'tutorials &amp; guides',},
     ],
     products:{
         news1: {

@@ -22,7 +22,7 @@ export default {
 @use '../../assets/style/partials/mixin' as*;
 
 section {
-    background-color: lighten($color: $lightgrey, $amount: 10);
+    background-color: $notwhite;
 
 
     .container {
