@@ -101,7 +101,7 @@ export default {
                         left: 0;
                         width: 70px;
                         height: 10px;
-                        background: conic-gradient(from 0deg at 50% 100%, #27AABE 0deg, #27AABE 50deg, rgba(41, 171, 190, 0) 50deg, rgba(217, 217, 217, 0) 310deg, #27AABE 310deg, #27AABE 360deg);
+                        background: conic-gradient(from 0deg at 50% 100%, $blue 0deg, $blue 50deg, rgba(41, 171, 190, 0) 50deg, rgba(217, 217, 217, 0) 310deg, $blue 310deg, $blue 360deg);
                     }
                 }
 
