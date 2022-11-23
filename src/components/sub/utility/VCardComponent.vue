@@ -1,4 +1,5 @@
 <template>
+    <!-- vertical card component -->
     <div class="wrapper">
         <div class="card-img"><img :src="elem.url" :alt="elem.name"></div>
         <div class="text">
@@ -12,7 +13,7 @@
 </template>
 
 <script>
-import { store } from '../../assets/store';
+import { store } from '../../../assets/store';
 export default {
     //vertical card component
     name: 'VCardComponent',
@@ -29,8 +30,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use '../../assets/style/partials/variables' as*;
-@use '../../assets/style/partials/mixin' as*;
+@use '../../../assets/style/partials/variables' as*;
+@use '../../../assets/style/partials/mixin' as*;
 
 .wrapper {
     cursor: pointer;

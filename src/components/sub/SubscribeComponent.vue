@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import BtnComponent from './BtnComponent.vue';
+import BtnComponent from './utility/BtnComponent.vue';
 import { store } from '../../assets/store';
 export default {
     name: "SubscribeComponent",

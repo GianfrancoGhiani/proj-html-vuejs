@@ -19,9 +19,9 @@
 
 <script>
 import { store } from '../../assets/store.js';
-import EmphasizedComponent from './EmphasizedComponent.vue';
-import LineBreakComponent from './LineBreakComponent.vue';
-import HCardComponent from './HCardComponent.vue';
+import EmphasizedComponent from './utility/EmphasizedComponent.vue';
+import LineBreakComponent from './utility/LineBreakComponent.vue';
+import HCardComponent from './utility/HCardComponent.vue';
 
 
 export default {

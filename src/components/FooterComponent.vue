@@ -1,5 +1,7 @@
 <template>
     <div class="container">
+        <!-- it is divided into 2 pts:
+                links list part -->
         <div class="lists">
             <ul>
                 <li class="bold caps">avada tech forum</li>
@@ -13,6 +15,7 @@
                 </li>
             </ul>
         </div>
+        <!-- bottom bar for copy and socials -->
         <div class="bot-bar">
             <p>&#169; Copyright 2012 - 2022 | Avada Theme by <span class="emph">ThemeFusion</span> | All Rights Reserved
                 |

@@ -1,14 +1,19 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    // takes user email for future back-end implementation
     userEmail:'',
     error:false,
+    // lists of:
+    // top navbar,
     topMenu:['home', 'apple', 'microsoft', 'android', 'forums', 'contanct us'],
+    //footerlinks,
     footLinks:[
     ['popular topics', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.'],
     ['recent topics', 'Lorem ipsum dolor sit, amet consectetur adipisicing.','Lorem ipsum dolor sit, amet consectetur adipisicing.','Lorem ipsum dolor sit, amet consectetur adipisicing.','Lorem ipsum dolor sit, amet consectetur adipisicing.'],
     ['latest replies','Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.', 'Lorem ipsum dolor sit, amet consectetur adipisicing.']
     ],
+    // icons,
     forumIcons:[
         {icon: '<i class="fa-solid fa-file-lines"></i>',
         title:'news &amp; comunity',},
@@ -27,6 +32,7 @@ export const store = reactive({
         {icon: '<i class="fa-solid fa-wrench"></i>',
         title:'tutorials &amp; guides',},
     ],
+    //news articles
     products:{
         news1: {
             mobilePhone:{
@@ -75,6 +81,7 @@ export const store = reactive({
         }
 
     },
+    // tutorial articles
     tutorial:{
         smartWatch: {
             url: '/img/post_feat_img_23-700x441.jpg',
@@ -98,6 +105,7 @@ export const store = reactive({
             description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus ab ad quae veniam exercitationem ipsam suscipit, minima nihil eos aliquid ipsa ut.'
         }
     },
+    // social media icons
     social:[
        {
          icon:'<i class="fa-brands fa-facebook-f"></i>',
@@ -115,7 +123,28 @@ export const store = reactive({
             icon:'<i class="fa-brands fa-youtube"></i>',
             class: 'yt',
         },
-    ]
+    ],
 
+    //take scrolling page point
+    pageScroll :0,
+    scrollPoint() {
+        // console.log('stai scendendo', document.documentElement.scrollTop)
+        this.pageScroll = document.documentElement.scrollTop;
+        this.displaying()
+    },
+    // show the "scrolltoTop" button
+    displaying() {
+        if (this.pageScroll > 300) {
+            // console.log('block');
+            return 'display: block';
+        } else {
+            return 'display: none';
+        }
+    },
+    //scroll to top
+    scrollTo() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    },
 
 })

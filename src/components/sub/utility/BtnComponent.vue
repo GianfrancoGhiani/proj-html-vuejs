@@ -5,7 +5,7 @@
 
 <script>
 import { includeBooleanAttr } from '@vue/shared';
-import { store } from '../../assets/store';
+import { store } from '../../../assets/store';
 export default {
     name: "BtnComponent",
     props: {
@@ -23,8 +23,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use '../../assets/style/partials/variables' as*;
-@use '../../assets/style/partials/mixin' as*;
+@use '../../../assets/style/partials/variables' as*;
+@use '../../../assets/style/partials/mixin' as*;
 
 button {
     cursor: pointer;

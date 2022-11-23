@@ -1,4 +1,5 @@
 <template>
+    <!-- logo+navbar section -->
     <section class="top-bar">
         <div class="container">
             <div class="logo"><img src="/img/logo.png" alt="logo"></div>
@@ -13,17 +14,30 @@
             </ul>
         </div>
     </section>
+    <!-- scroll to top button -->
+    <section>
+        <div class="btn-to-top">
+            <button @click="store.scrollTo()" :style="store.displaying()">
+                <i class=" fa-solid fa-chevron-up"></i></button>
+        </div>
+    </section>
 </template>
 
 <script>
 import { store } from '../assets/store';
-import BtnComponent from './sub/BtnComponent.vue';
+import BtnComponent from './sub/utility/BtnComponent.vue';
 export default {
     name: "Header Component",
     data() {
         return {
             store,
         };
+    },
+
+    methods: {
+
+
+
     },
     components: { BtnComponent }
 }
@@ -73,10 +87,15 @@ export default {
 
                 &.item:hover {
                     transform: scale(1.05);
+
                 }
 
                 &.active {
+
+                    box-shadow: inset 4px 0px 3px -2px $lightblue, inset -4px 0px 3px -2px $lightblue;
+
                     div {
+
                         position: absolute;
                         top: 4rem;
                         left: 0;
@@ -101,5 +120,28 @@ export default {
     .caps {
         background-color: $dark;
     }
+}
+
+.btn-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 2rem;
+
+    button {
+        cursor: pointer;
+
+        border: 0;
+        padding: 1rem;
+        border-radius: .5rem .5rem 0 0;
+        background-color: $lightgrey;
+        transition: background-color 200ms, color 200ms;
+
+        &:hover {
+            background-color: $grey;
+            color: $white;
+        }
+    }
+
+
 }
 </style>

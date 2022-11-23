@@ -15,8 +15,8 @@
 
 <script>
 import { store } from '../../assets/store.js';
-import ForumCComponent from './ForumCComponent.vue';
-import LineBreakComponent from './LineBreakComponent.vue';
+import ForumCComponent from './utility/ForumCComponent.vue';
+import LineBreakComponent from './utility/LineBreakComponent.vue';
 
 
 export default {

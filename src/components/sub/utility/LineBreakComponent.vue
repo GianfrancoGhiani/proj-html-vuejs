@@ -10,8 +10,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use '../../assets/style/partials/variables' as*;
-@use '../../assets/style/partials/mixin' as*;
+@use '../../../assets/style/partials/variables' as*;
+@use '../../../assets/style/partials/mixin' as*;
 
 div {
     height: 1px;

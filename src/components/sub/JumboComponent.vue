@@ -1,5 +1,5 @@
 <template>
-    <div class="jumbo">
+    <div class="jumbo" id="1">
         <div class="container">
             <h1>Tech Forum!</h1>
             <div>Discuss all the latest technology news and trends</div>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import BtnComponent from './BtnComponent.vue';
+import BtnComponent from './utility/BtnComponent.vue';
 
 export default {
     components: { BtnComponent }

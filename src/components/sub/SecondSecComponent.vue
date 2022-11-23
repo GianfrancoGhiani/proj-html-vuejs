@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import LineBreakComponent from './LineBreakComponent.vue';
-import VCardComponent from './VCardComponent.vue';
-import EmphasizedComponent from './EmphasizedComponent.vue';
+import LineBreakComponent from './utility/LineBreakComponent.vue';
+import VCardComponent from './utility/VCardComponent.vue';
+import EmphasizedComponent from './utility/EmphasizedComponent.vue';
 
 import { store } from '../../assets/store';
 

@@ -31,8 +31,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use '../../assets/style/partials/variables.scss' as*;
-@use '../../assets/style/partials/mixin.scss' as*;
+@use '../../../assets/style/partials/variables.scss' as*;
+@use '../../../assets/style/partials/mixin.scss' as*;
 
 .big-wrapp {
     color: $white;

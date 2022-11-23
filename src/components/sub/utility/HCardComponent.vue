@@ -1,4 +1,5 @@
 <template>
+    <!-- Horizontal card component -->
     <div class="lit-wrapper">
         <img :src="elem.url" :alt="elem.name">
         <div class="text">
@@ -21,8 +22,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use '../../assets/style/partials/variables' as*;
-@use '../../assets/style/partials/mixin' as*;
+@use '../../../assets/style/partials/variables' as*;
+@use '../../../assets/style/partials/mixin' as*;
 
 .lit-wrapper {
     transition: background-color 300ms ease-in-out;
